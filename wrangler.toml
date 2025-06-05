@@ -1,8 +1,42 @@
-name = "maoyan-movie-api"
+
+# wrangler.toml - Cloudflare Worker 配置文件
+
+name = "maoyan-movie-api-cf"
 main = "src/index.js"
+compatibility_date = "2024-06-05"
+compatibility_flags = ["nodejs_compat"]
 
-account_id = "45895ad1c6415f354cba71fff330fcfd"
-workers_dev = true
-compatibility_date = "2025-05-25"
+# Worker 配置
+[build]
+command = ""
+
+# KV 存储配置（用于缓存）
+[[kv_namespaces]]
+binding = "MOVIE_CACHE"
+id = "9ad74fa3bb38431aa992441358d4b8be"
 
 
+# 环境变量
+[vars]
+API_VERSION = "1.0.0"
+CACHE_TTL_BASIC = "3600"      # 基础数据缓存1小时
+CACHE_TTL_FULL = "1800"       # 完整数据缓存30分钟
+RATE_LIMIT_MAX = "100"        # 每分钟最大请求数
+RATE_LIMIT_WINDOW = "60000"   # 速率限制窗口（毫秒）
+
+
+# 生产环境配置
+[env.production]
+name = "maoyan-movie-api-prod"
+[[env.production.kv_namespaces]]
+binding = "MOVIE_CACHE"
+id = "9ad74fa3bb38431aa992441358d4b8be"
+
+# 触发器配置（定期清理缓存等）
+# [[triggers]]
+# crons = ["0 2 * * *"]  # 每天凌晨2点执行
+
+
+# Wrangler v3 新增：观测性配置
+[observability]
+enabled = true

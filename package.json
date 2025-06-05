@@ -1,17 +1,41 @@
 {
   "name": "maoyan-movie-api",
   "version": "1.0.0",
-  "description": "Cloudflare Workers API for Maoyan movie data",
+  "description": "猫眼电影数据API - Cloudflare Worker (Wrangler v3)",
   "main": "src/index.js",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "tail": "wrangler tail"
+    "deploy:prod": "wrangler deploy --env production",
+    "tail": "wrangler tail",
+    "logs": "wrangler tail --format=pretty",
+    "analytics": "wrangler analytics"
   },
-  "keywords": ["cloudflare-workers", "maoyan", "movie", "api"],
-  "author": "",
+  "keywords": [
+    "movie",
+    "api", 
+    "maoyan",
+    "cloudflare",
+    "worker",
+    "serverless"
+  ],
+  "author": "Ahua9527",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
-    "wrangler": "^3.0.0"
-  }
+    "wrangler": "^1.0.0"
+  },
+  "peerDependencies": {
+    "wrangler": "1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahua9527/maoyan_movie_api_cf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ahua9527/maoyan_movie_api_cf/issues"
+  },
+  "homepage": "https://maoyan.ahua.space"
 }
