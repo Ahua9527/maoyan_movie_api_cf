@@ -1,7 +1,7 @@
 {
   "name": "maoyan-movie-api",
   "version": "1.0.0",
-  "description": "猫眼电影数据API - Cloudflare Worker (Wrangler v3)",
+  "description": "猫眼电影数据API - Cloudflare Worker",
   "main": "src/index.js",
   "scripts": {
     "dev": "wrangler dev",

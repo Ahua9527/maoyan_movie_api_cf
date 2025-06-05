@@ -38,7 +38,7 @@ function createFrontendResponse() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>猫眼电影API - 现代化电影信息检索工具</title>
+    <title>猫眼电影API - 一个运行在Cloudflare Workers的电影API</title>
     <meta name="description" content="获取完整的猫眼电影数据，包括票房信息、评分、剧情简介等详细内容">
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
