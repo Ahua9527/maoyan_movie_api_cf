@@ -32,9 +32,6 @@ name = "maoyan-movie-api-prod"
 binding = "MOVIE_CACHE"
 id = "9ad74fa3bb38431aa992441358d4b8be"
 
-# 触发器配置（定期清理缓存等）
-[[triggers]]
-crons = ["0 2 * * *"]  # 每天凌晨2点执行
 
 
 # Wrangler v3 新增：观测性配置
