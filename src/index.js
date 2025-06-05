@@ -97,7 +97,7 @@ function createFrontendResponse() {
             const [error, setError] = useState(null);
             const [copied, setCopied] = useState(false);
 
-            const exampleIds = ['1413252', '1203084', '1297192', '1302425'];
+            const exampleIds = ['1294273', '1413252', '1203084', '1297192', '1302425'];
 
             const handleSearch = async () => {
                 if (!movieId.trim()) return;
@@ -412,7 +412,7 @@ function createFrontendResponse() {
                                 </a>
                             </div>
                             <p className="mt-2 text-xs text-center text-slate-400">
-                                🎬 猫眼电影数据API © 2025 | Designed & Developed by Ahua9527
+                                🎬 猫眼电影数据API © 2025 | Designed & Developed by  哆啦Ahua🌱
                             </p>
                         </div>
                     </footer>

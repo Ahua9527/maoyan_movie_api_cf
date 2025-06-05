@@ -13,7 +13,7 @@
   },
   "keywords": [
     "movie",
-    "api", 
+    "api",
     "maoyan",
     "cloudflare",
     "worker",
@@ -25,7 +25,7 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "wrangler": "^1.0.0"
+    "wrangler": "^4.19.1"
   },
   "peerDependencies": {
     "wrangler": "1.0.0"
