@@ -1,0 +1,17 @@
+{
+  "name": "maoyan-movie-api",
+  "version": "1.0.0",
+  "description": "Cloudflare Workers API for Maoyan movie data",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "keywords": ["cloudflare-workers", "maoyan", "movie", "api"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

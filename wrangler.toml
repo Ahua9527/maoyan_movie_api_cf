@@ -1,0 +1,8 @@
+name = "maoyan-movie-api"
+main = "src/index.js"
+
+account_id = "45895ad1c6415f354cba71fff330fcfd"
+workers_dev = true
+compatibility_date = "2025-05-25"
+
+
